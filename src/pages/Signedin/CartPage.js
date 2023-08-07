@@ -1,4 +1,4 @@
-import React, { useRef } from "react"; 
+import React, { useRef } from "react";
 import { MenuList } from "../../data/data";
 import {
   Box,
@@ -11,8 +11,8 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
-import Menusignedin from "./Menusignedin"; 
-import {TypeOfFood } from "./TypeOfFood"
+import Menusignedin from "./Menusignedin";
+import { TypeOfFood } from "./TypeOfFood"
 
 const styles = {
   card: {
@@ -33,27 +33,27 @@ const CartPage = ({ userEmail }) => {
 
   return (
     <div>
-       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            {TypeOfFood.map((menu) => (
-              <Card sx={styles.card} key={menu.name}>
-                <CardActionArea>
-                  <CardMedia
-                    sx={{ minHeight: "375px" }}
-                    component={"img"}
-                    src={menu.image}
-                    alt={menu.name}
-                  />
-                  <CardContent>
-                    <Typography variant="h5" gutterBottom component={"div"} textAlign="center">
-                      {menu.name}
-                    </Typography>
-                    {/* <Typography variant="body2">{menu.description}</Typography> */}
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            ))}
-          </Box>
-      <Menusignedin/>
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        {TypeOfFood.map((menu) => (
+          <Card sx={styles.card} key={menu.name}>
+            <CardActionArea>
+              <CardMedia
+                sx={{ minHeight: "375px" }}
+                component={"img"}
+                src={menu.image}
+                alt={menu.name}
+              />
+              <CardContent>
+                <Typography variant="h5" gutterBottom component={"div"} textAlign="center">
+                  {menu.name}
+                </Typography>
+                {/* <Typography variant="body2">{menu.description}</Typography> */}
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        ))}
+      </Box>
+      <Menusignedin />
     </div>
   );
 };
