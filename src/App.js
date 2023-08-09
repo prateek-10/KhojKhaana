@@ -11,6 +11,7 @@ import { auth, provider } from "./pages/config";
 import { signOut } from "firebase/auth"
 import Header from "./components/Layout/Header";
 import Headersignout from "./components/Layoutsignedin/Headersignout";
+import ProductPage from "./pages/Signedin/ProductPage";
 
 function App() {
   const [userEmail, setUserEmail] = useState("");
@@ -48,6 +49,9 @@ function App() {
           />
           <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<Pagenotfound />} />
+          <Route path="/product/:productid" 
+             element={<ProductPage/>}
+             />
         </Routes>
       </BrowserRouter>
     </div>

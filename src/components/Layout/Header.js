@@ -52,7 +52,6 @@ const Header = ({ isAuthenticated, handleSignOut }) => {
         <li>
           <NavLink to={"/login"}>Login</NavLink>
         </li>
-        
       </ul>
     </Box>
   );
@@ -124,9 +123,9 @@ const Header = ({ isAuthenticated, handleSignOut }) => {
             {drawer}
           </Drawer>
         </Box>
-        <Box>
+        {/* <Box>
           <Toolbar />
-        </Box>
+        </Box> */}
       </Box>
     </>
   );

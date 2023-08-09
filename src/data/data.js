@@ -24,7 +24,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: CornKorma,
     price: 200,
-    category: "jain"
+    category: "jain",
+    id: 1
   },
   {
     name: "Dal Makhani",
@@ -32,7 +33,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: DalMakhani,
     price: 200,
-    category: "jain"
+    category: "jain",
+    id: 2
   },
   {
     name: "Rice and Lentils",
@@ -40,7 +42,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: rice,
     price: 200,
-    category: "jain"
+    category: "jain",
+    id: 3
   },
   {
     name: "Dosa",
@@ -48,7 +51,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Dosa,
     price: 200,
-    category: "veg"
+    category: "veg", 
+    id: 4
   },
   {
     name: "Chola",
@@ -56,7 +60,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Chola,
     price: 250,
-    category: "veg"
+    category: "veg",
+    id: 5
   },
   {
     name: "Idli Sambhar",
@@ -64,7 +69,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Idli,
     price: 300,
-    category: "veg"
+    category: "veg",
+    id: 6
   },
   {
     name: "Masala Dosa",
@@ -72,7 +78,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: MasalaDosa,
     price: 100,
-    category: "veg"
+    category: "veg",
+    id: 7
   },
   {
     name: "Paneer",
@@ -80,7 +87,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Paneer,
     price: 400,
-    category: "veg"
+    category: "veg",
+    id: 8
   },
   {
     name: "Gujrati",
@@ -88,7 +96,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Gujrati,
     price: 500,
-    category: "veg"
+    category: "veg",
+    id: 9
   },
   {
     name: "Malabar Fish Biryani",
@@ -96,7 +105,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: FishBiryani,
     price: 200,
-    category: "nonveg"
+    category: "nonveg", 
+    id: 10
   },
   {
     name: "Mutton Badam Korma",
@@ -104,7 +114,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: MuttonKorma,
     price: 200,
-    category: "nonveg"
+    category: "nonveg",
+    id: 11
   },
   {
     name: "Grilled Chicken with Salsa",
@@ -112,7 +123,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Chicken,
     price: 200,
-    category: "nonveg"
+    category: "nonveg",
+    id: 12
   },
   {
     name: "Masala Chai",
@@ -120,7 +132,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: MasalaChai,
     price: 200,
-    category: "beverage"
+    category: "beverage", 
+    id: 13
   },
   {
     name: "Oreo Shake",
@@ -128,7 +141,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: OreoShake,
     price: 200,
-    category: "beverage"
+    category: "beverage", 
+    id: 14
   },
   {
     name: "Aam Panna",
@@ -136,7 +150,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: AamPanna,
     price: 200,
-    category: "beverage"
+    category: "beverage", 
+    id: 15
   },
   {
     name: "Kaju Katli",
@@ -144,7 +159,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: KajuKatli,
     price: 200,
-    category: "dessert"
+    category: "dessert",
+    id: 16
   },
   {
     name: "Gulab Jamun",
@@ -152,7 +168,8 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: GulabJamun,
     price: 200,
-    category: "dessert"
+    category: "dessert", 
+    id: 17
   },
   {
     name: "Modak",
@@ -160,6 +177,7 @@ export const MenuList = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Modak,
     price: 200,
-    category: "dessert"
+    category: "dessert", 
+    id: 18
   },
 ];
