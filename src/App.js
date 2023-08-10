@@ -22,6 +22,8 @@ function App() {
     setIsAuthenticated(false); // Set the authenticated state to false
     localStorage.removeItem("email"); // Remove the email from local storage
   };
+
+  const [reloadnavbar, setreloadnavbar] = React.useState(false)
   
   useEffect(() => {
     const storedEmail = localStorage.getItem("email");
@@ -34,14 +36,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <Headersignout isAuthenticated={isAuthenticated} handleSignOut={handleSignOut} />
+      <Headersignout isAuthenticated={isAuthenticated} handleSignOut={handleSignOut} reloadnavbar={reloadnavbar} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
           <Route
-            path="/cart"
+            path="/cartpage"
             element={
               <CartPage
                 userEmail={userEmail} handleSignOut={handleSignOut} />
@@ -50,7 +52,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<Pagenotfound />} />
           <Route path="/product/:productid" 
-             element={<ProductPage/>}
+             element={<ProductPage reloadnavbar={reloadnavbar}
+             setreloadnavbar={setreloadnavbar}/>}
              />
         </Routes>
       </BrowserRouter>
