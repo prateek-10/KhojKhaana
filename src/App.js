@@ -12,6 +12,7 @@ import { signOut } from "firebase/auth"
 import Header from "./components/Layout/Header";
 import Headersignout from "./components/Layoutsignedin/Headersignout";
 import ProductPage from "./pages/Signedin/ProductPage";
+import MyCart from "./pages/Signedin/MyCart";
 
 function App() {
   const [userEmail, setUserEmail] = useState("");
@@ -55,6 +56,7 @@ function App() {
              element={<ProductPage reloadnavbar={reloadnavbar}
              setreloadnavbar={setreloadnavbar}/>}
              />
+             <Route path="/mycart" element={<MyCart />} />
         </Routes>
       </BrowserRouter>
     </div>
