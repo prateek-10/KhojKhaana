@@ -18,7 +18,7 @@ const LoginPage = () => {
     // Check if the user is already signed in
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigate("/cart"); // Redirect to cart page if the user is already logged in
+        navigate("/cartpage"); // Redirect to cart page if the user is already logged in
       }
     });
 
@@ -31,7 +31,7 @@ const LoginPage = () => {
       .then((result) => {
         const userEmail = result.user.email;
         localStorage.setItem("email", userEmail);
-        navigate("/cart");
+        navigate("/cartpage");
       })
       .catch((error) => {
         console.log("Sign-in error:", error);
