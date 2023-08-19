@@ -36,7 +36,7 @@ const Header = ({ isAuthenticated, handleSignOut }) => {
       <Divider />
       <ul className="mobile-navigation">
         <li>
-          <NavLink activeClassName="active" to={"/"}>
+          <NavLink activeclassname="active" to={"/"}>
             Home
           </NavLink>
         </li>
@@ -83,7 +83,7 @@ const Header = ({ isAuthenticated, handleSignOut }) => {
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <ul className="navigation-menu">
                 <li>
-                  <NavLink activeClassName="active" to={"/"}>
+                  <NavLink activeclassname="active" to={"/"}>
                     Home
                   </NavLink>
                 </li>

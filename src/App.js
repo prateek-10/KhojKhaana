@@ -56,7 +56,8 @@ function App() {
              element={<ProductPage reloadnavbar={reloadnavbar}
              setreloadnavbar={setreloadnavbar}/>}
              />
-             <Route path="/mycart" element={<MyCart />} />
+             <Route path="/mycart" element={<MyCart reloadnavbar={reloadnavbar}
+             setreloadnavbar={setreloadnavbar}/>} />
         </Routes>
       </BrowserRouter>
     </div>
